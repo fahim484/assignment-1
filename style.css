@@ -41,6 +41,11 @@ body {
                     font-weight: 500;
                 }
             }
+            & li a:hover{
+                background-color: #111;
+                color: #FFFFFF;
+                border-radius: 30px;
+            }
         }
     }
     .navbar-btn{
