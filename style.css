@@ -11,63 +11,139 @@ body {
 /* Global or Common CSS style end */
 
 /* Navbar section CSS: */
-.navbar{
-    width: 90%;
-    height: 105px;
+.navbar {
+  width: 90%;
+  height: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px auto;
+  padding-top: 20px;
+
+  & div {
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #ffffff;
+      overflow: hidden;
+      font-size: 22px;
+
+      & li {
+        display: inline-block;
+
+        & a {
+          display: block;
+          color: #000000;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-weight: 500;
+        }
+      }
+      & li a:hover {
+        background-color: #111;
+        color: #ffffff;
+        border-radius: 30px;
+      }
+    }
+  }
+  .navbar-btn {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 18px auto;
-    padding-top: 20px;
 
-    & div{
-        & ul{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            background-color: #FFFFFF;
-            overflow: hidden;
-            font-size: 22px;
-
-            & li{
-                display: inline-block;
-
-                & a{
-                    display: block;
-                    color: #000000;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    font-weight: 500;
-                }
-            }
-            & li a:hover{
-                background-color: #111;
-                color: #FFFFFF;
-                border-radius: 30px;
-            }
-        }
+    & form {
+      & input {
+        padding: 11px 28px;
+        margin-right: 15px;
+        border-radius: 30px;
+        border: none;
+        font-size: 22px;
+        font-weight: 500;
+        cursor: pointer;
+      }
     }
-    .navbar-btn{
-        display: flex;
-        align-items: center;
-
-        & form{
-            & input{
-                padding: 11px 28px;
-                margin-right: 15px;
-                border-radius: 30px;
-                border: none;
-                font-size: 22px;
-                font-weight: 500;
-                cursor: pointer;
-            }
-        }
-    }
+  }
 }
 
 /* Banner or Hero section CSS: */
-.banner-section{
-    width: 100%;
-    background-image: url("");
+.banner-section {
+  width: 100%;
+  height: 760px;
+  background-image: url("./images/Rectangle\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .banner-center {
+    width: 1160px;
+    height: 344px;
+    background-color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 44px 94px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+
+    & h1 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 45px;
+      margin-bottom: 55px;
+    }
+
+    .custom-select {
+      .custom-select-option {
+        width: 220px;
+        padding: 11px 20px;
+        border-radius: 8px;
+        margin-right: 18px;
+        background-color: #ececec;
+        height: auto;
+        font-weight: 500;
+        font-size: 22px;
+        border: none;
+        cursor: pointer;
+
+        & option {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  & form{
+    margin-top: 24px;
+    & input[type="search"]{
+        background-color: #ECECEC;
+        width: 702px;
+        height: 50px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 8px;
+        text-align: center;
+        color: #000000;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    & input[type="submit"]{
+        background-color: #00EBC7;
+        width: 222px;
+        height: 50px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 30px;
+        color: #000000;
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 18px;
+        margin-right: 11px;
+        cursor: pointer;
+    }
+  }
 }
