@@ -285,11 +285,6 @@ body {
   height: 750px;
   background-color: #f8f8f8;
   padding: 75px 65px;
-
-  & hr{
-    width: 4000px;
-  }
-
   .offers-section-main {
     display: flex;
     align-items: center;
@@ -322,7 +317,7 @@ body {
           border-radius: 15px;
           padding: 13px 79px 13px 20px;
           margin-bottom: 34px;
-          background-color: #FFFFFF;
+          background-color: #ffffff;
 
           & h4 {
             color: #000000;
@@ -380,7 +375,7 @@ body {
           border-radius: 15px;
           padding: 13px 79px 13px 20px;
           margin-bottom: 34px;
-          background-color: #FFFFFF;
+          background-color: #ffffff;
 
           & h4 {
             color: #000000;
@@ -414,8 +409,8 @@ body {
     }
 
     .vl {
-      border-left: 6px solid green;
-      height: 750px;
+      border-left: 6px solid #000000;
+      height: 752px;
       position: relative;
       left: 0%;
       margin-top: -103px;
@@ -423,5 +418,37 @@ body {
       border-style: solid;
       border-color: #000000;
     }
+  }
+}
+
+/* Crypto section CSS: */
+.crypto-section {
+  width: 100%;
+  height: 600px;
+  background-color: #cfbaff;
+  text-align: center;
+
+  & h1{
+    font-size: 75px;
+    font-weight: 500;
+    color: #000000;
+    padding: 161px 70px 127px;
+  }
+
+  & button{
+    padding: 15px 45px;
+    border-radius: 30px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  & button:hover{
+    background-color: #FFFFFF;
+    color: #000000;
   }
 }
