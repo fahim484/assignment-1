@@ -503,17 +503,303 @@ footer {
 
   & hr {
     height: 1px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border: none;
   }
 
-  .footer-lower-section{
-    & p{
-      color: #FFFFFF;
+  .footer-lower-section {
+    & p {
+      color: #ffffff;
       font-size: 13px;
       font-weight: 500;
       padding: 40px 251px;
       text-align: justify;
+    }
+  }
+}
+
+/* ! Responsive:(for mobile devise only) */
+@media (max-device-width: 767px) {
+  /* Navbar section CSS: */
+  .navbar {
+    .navbar-link-div {
+      display: none;
+    }
+
+    & div {
+      .main-navbar-logo {
+        width: 80%;
+      }
+    }
+    .navbar-btn {
+      & form {
+        & input {
+          height: 35px;
+          padding: 5px 11px;
+          margin-right: 4px;
+          border-radius: 15px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  /* Banner or Hero section CSS: */
+  .banner-section {
+    width: 100%;
+    height: 860px;
+
+    .banner-center {
+      width: 100%;
+      height: 544px;
+      background-color: #ffffff;
+      border-radius: 0px;
+      padding: 30px 0px 0px 0px;
+
+      & h1 {
+        font-size: 35px;
+        margin-bottom: 25px;
+      }
+
+      .custom-select {
+        .custom-select-option {
+          vertical-align: middle;
+          width: 200px;
+          padding: 11px 20px;
+          margin: 10px;
+          border-radius: 8px;
+          margin-right: 18px;
+          background-color: #ececec;
+          height: auto;
+          font-weight: 500;
+          font-size: 10px;
+          border: none;
+          cursor: pointer;
+
+          & option {
+            font-size: 10px;
+            width: 10px;
+          }
+        }
+      }
+    }
+
+    & form {
+      text-align: center;
+      margin-top: 24px;
+      & input[type="search"] {
+        width: 100%;
+        height: 50px;
+        padding: 12px 18px;
+        margin: 8px 0;
+        text-align: center;
+        font-size: 15px;
+      }
+      & input[type="submit"] {
+        width: 100%;
+        height: 50px;
+        padding: 12px 18px;
+        margin: 8px 0;
+        font-size: 15px;
+      }
+    }
+
+    .banner-zapper-btn {
+      bottom: 4%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      font-size: 15px;
+
+      & hr {
+        border-color: #ffffff;
+        margin-top: 0;
+      }
+    }
+  }
+
+  /* Buying section CSS: */
+  .buying-section {
+    width: 100%;
+    height: 300px;
+    padding: 80px 15px;
+
+    & h2 {
+      font-size: 15px;
+    }
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  /* Features section CSS: */
+  .features-section {
+    width: 100%;
+    height: auto;
+
+    & div {
+      align-items: center;
+
+      & h2 {
+        font-size: 34px;
+      }
+    }
+
+    .features-main {
+      padding-left: 0%;
+    }
+
+    & div {
+      .features-details {
+        flex-direction: column;
+
+        & hr {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+
+  /* Offers section CSS: */
+  .offers-section {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    .offers-section-main {
+      justify-content: space-between;
+      flex-direction: column;
+      margin: 0 auto;
+
+      .left-offers-div {
+        width: 100%;
+        height: auto;
+
+        & h2 {
+          font-size: 24px;
+          margin-bottom: 50px;
+        }
+
+        .left-offers-main {
+          width: 100%;
+          height: auto;
+          text-align: center;
+
+          & h2 {
+            margin-top: 20px;
+            font-size: 34px;
+          }
+
+          & div {
+            width: 100%;
+            height: auto;
+            gap: 10px;
+            padding: 13px 0px 13px 20px;
+            margin-bottom: 34px;
+            background-color: #ffffff;
+
+            & h4 {
+              font-size: 14px;
+              .offers-middle-text {
+                margin: 34px 0;
+              }
+            }
+          }
+        }
+
+        .btn-div {
+          & button {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .right-offers-div {
+        width: 100%;
+        height: auto;
+
+        & h2 {
+          font-size: 34px;
+          margin-bottom: 50px;
+        }
+
+        .right-offers-main {
+          width: 100%;
+          height: auto;
+          text-align: center;
+
+          & h2 {
+            margin-top: 30px;
+          }
+
+          & div {
+            width: 100%;
+            height: auto;
+            gap: 10px;
+            padding: 13px 0px 13px 20px;
+
+            & h4 {
+              font-size: 14px;
+              .offers-middle-text {
+                margin: 34px 0;
+              }
+            }
+          }
+        }
+
+        .btn-div {
+          & button {
+            margin-top: 10px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+
+      .vl {
+        display: none;
+      }
+    }
+  }
+
+  /* Crypto section CSS: */
+  .crypto-section {
+    & h1 {
+      font-size: 40px;
+      padding: 100px 0px;
+      text-align: center;
+    }
+  }
+
+  /* Footer section CSS: */
+  footer {
+    width: 100%;
+    height: auto;
+
+    .footer-upper-section {
+      text-align: center;
+      .footer-links {
+        flex-direction: column;
+        padding: 100px 100px;
+
+        & div {
+          & h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 32px;
+          }
+        }
+      }
+    }
+
+    & hr {
+      height: 1px;
+      background-color: #ffffff;
+      border: none;
+    }
+
+    .footer-lower-section {
+      & p {
+        padding: 50px 40px;
+      }
     }
   }
 }
